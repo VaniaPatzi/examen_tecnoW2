@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
+import route from "./routes/usuariosRoute.js";
 
 const app = express();
 
@@ -18,3 +19,5 @@ mongoose.connect(MONGOURL).then(() => {
 }).catch((error) => {
   console.log("Error al conectar a MongoDB: ", error);
 });
+
+app.use("/api/usuarios", route);
