@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import route from "./routes/usuariosRoute.js";
+import route from "./routes/productosRoute.js";
 
 const app = express();
 
@@ -21,3 +22,4 @@ mongoose.connect(MONGOURL).then(() => {
 });
 
 app.use("/api/usuarios", route);
+app.use("/api/productos", route);
