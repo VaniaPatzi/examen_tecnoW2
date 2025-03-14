@@ -1,11 +1,11 @@
 import express from "express";
 import { fetch, create, update, deleteUsuario } from "../controller/usuariosController.js";
 
-const route = express.Router();
+const usuariosRoute = express.Router();
 
-route.post("/create", create);
-route.get("/getAllUsers", fetch);
-route.put("/update/:id", update);
-route.delete("/delete/:id", deleteUsuario);
+usuariosRoute.post("/create", create);
+usuariosRoute.get("/getAllUsers", fetch);
+usuariosRoute.put("/update/:id", update);
+usuariosRoute.delete("/delete/:id", deleteUsuario);
 
-export default route;
+export default usuariosRoute;
