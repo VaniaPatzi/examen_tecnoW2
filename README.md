@@ -13,5 +13,5 @@ Para ejecutar el proyecto se debe tener:
 ## Endpoints para corer en postman
 - GET /api/usuarios: Obtiene todos los usuarios
 - GET /api/productos: Obtiene todos los productos
-- GET /contadores:
+- GET /contadores: Obtiene las operaciones realizadas en el backend
 - GET /operaciones: Devuelve el número total de operaciones realizadas en el backend
